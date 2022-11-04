@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source of the Rust file `src/lib.rs`."><meta name="keywords" content="rust, rustlang, rust-lang"><title>lib.rs - source</title><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceSerif4-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../FiraSans-Regular.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../FiraSans-Medium.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceCodePro-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceSerif4-Bold.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceCodePro-Semibold.ttf.woff2"><link rel="stylesheet" href="../../normalize.css"><link rel="stylesheet" href="../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" href="../../ayu.css" disabled><link rel="stylesheet" href="../../dark.css" disabled><link rel="stylesheet" href="../../light.css" id="themeStyle"><script id="default-settings" ></script><script src="../../storage.js"></script><script defer src="../../source-script.js"></script><script defer src="../../source-files.js"></script><script defer src="../../main.js"></script><noscript><link rel="stylesheet" href="../../noscript.css"></noscript><link rel="alternate icon" type="image/png" href="../../favicon-16x16.png"><link rel="alternate icon" type="image/png" href="../../favicon-32x32.png"><link rel="icon" type="image/svg+xml" href="../../favicon.svg"></head><body class="rustdoc source"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"></nav><main><div class="width-limiter"><nav class="sub"><a class="sub-logo-container" href="../../vault_test_replenisher/index.html"><img class="rust-logo" src="../../rust-logo.svg" alt="logo"></a><form class="search-form"><span></span><input class="search-input" name="search" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><div id="help-button" title="help" tabindex="-1"><a href="../../help.html">?</a></div><div id="settings-menu" tabindex="-1"><a href="../../settings.html" title="settings"><img width="22" height="22" alt="Change settings" src="../../wheel.svg"></a></div></form></nav><section id="main-content" class="content"><div class="example-wrap"><pre class="src-line-numbers"><span id="1">1</span>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source of the Rust file `src/lib.rs`."><meta name="keywords" content="rust, rustlang, rust-lang"><title>lib.rs - source</title><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceSerif4-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../FiraSans-Regular.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../FiraSans-Medium.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceCodePro-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceSerif4-Bold.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../SourceCodePro-Semibold.ttf.woff2"><link rel="stylesheet" type="text/css" href="../../normalize.css"><link rel="stylesheet" type="text/css" href="../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../../ayu.css" disabled><link rel="stylesheet" type="text/css" href="../../dark.css" disabled><link rel="stylesheet" type="text/css" href="../../light.css" id="themeStyle"><script id="default-settings" ></script><script src="../../storage.js"></script><script defer src="../../source-script.js"></script><script defer src="../../source-files.js"></script><script defer src="../../main.js"></script><noscript><link rel="stylesheet" href="../../noscript.css"></noscript><link rel="alternate icon" type="image/png" href="../../favicon-16x16.png"><link rel="alternate icon" type="image/png" href="../../favicon-32x32.png"><link rel="icon" type="image/svg+xml" href="../../favicon.svg"></head><body class="rustdoc source"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="mobile-topbar"><button class="sidebar-menu-toggle">&#9776;</button><a class="sidebar-logo" href="../../vault_test_replenisher/index.html"><div class="logo-container"><img class="rust-logo" src="../../rust-logo.svg" alt="logo"></div></a><h2 class="location"></h2></nav><nav class="sidebar"><a class="sidebar-logo" href="../../vault_test_replenisher/index.html"><div class="logo-container"><img class="rust-logo" src="../../rust-logo.svg" alt="logo"></div></a></nav><main><div class="width-limiter"><div class="sub-container"><a class="sub-logo-container" href="../../vault_test_replenisher/index.html"><img class="rust-logo" src="../../rust-logo.svg" alt="logo"></a><nav class="sub"><form class="search-form"><div class="search-container"><span></span><input class="search-input" name="search" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><div id="help-button" title="help" tabindex="-1"><button type="button">?</button></div><div id="settings-menu" tabindex="-1"><a href="../../settings.html" title="settings"><img width="22" height="22" alt="Change settings" src="../../wheel.svg"></a></div></div></form></nav></div><section id="main-content" class="content"><div class="example-wrap"><pre class="line-numbers"><span id="1">1</span>
 <span id="2">2</span>
 <span id="3">3</span>
 <span id="4">4</span>
@@ -40,47 +40,47 @@
 <span id="40">40</span>
 <span id="41">41</span>
 <span id="42">42</span>
-</pre><pre class="rust"><code><span class="kw">mod </span>interface;
+</pre><pre class="rust"><code><span class="kw">mod</span> <span class="ident">interface</span>;
 
-<span class="kw">use </span>interface::ft::ft;
-<span class="kw">use </span>near_sdk::{
-    borsh::{<span class="self">self</span>, BorshDeserialize, BorshSerialize},
-    env,
-    json_types::U128,
-    log, near_bindgen, Gas,
+<span class="kw">use</span> <span class="ident">interface::ft::ft</span>;
+<span class="kw">use</span> <span class="ident">near_sdk</span>::{
+    <span class="ident">borsh</span>::{<span class="self">self</span>, <span class="ident">BorshDeserialize</span>, <span class="ident">BorshSerialize</span>},
+    <span class="ident">env</span>,
+    <span class="ident">json_types::U128</span>,
+    <span class="ident">log</span>, <span class="ident">near_bindgen</span>, <span class="ident">Gas</span>,
 };
 
-<span class="kw">pub const </span>NEAR: u128 = <span class="number">10u128</span>.pow(<span class="number">24</span>);
+<span class="kw">pub</span> <span class="kw">const</span> <span class="ident">NEAR</span>: <span class="ident">u128</span> <span class="op">=</span> <span class="number">10u128</span>.<span class="ident">pow</span>(<span class="number">24</span>);
 
-<span class="attribute">#[near_bindgen]
-#[derive(Debug, BorshSerialize, BorshDeserialize)]
-</span><span class="kw">pub struct </span>Contract {}
+<span class="attribute">#[<span class="ident">near_bindgen</span>]</span>
+<span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">BorshSerialize</span>, <span class="ident">BorshDeserialize</span>)]</span>
+<span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">Contract</span> {}
 
-<span class="attribute">#[near_bindgen]
-</span><span class="kw">impl </span>Contract {
-    <span class="attribute">#[init]
-    #[private]
-    </span><span class="kw">pub fn </span>new() -&gt; <span class="self">Self </span>{
-        <span class="macro">assert!</span>(!env::state_exists(), <span class="string">&quot;Already initialized&quot;</span>);
-        <span class="self">Self </span>{}
+<span class="attribute">#[<span class="ident">near_bindgen</span>]</span>
+<span class="kw">impl</span> <span class="ident">Contract</span> {
+    <span class="attribute">#[<span class="ident">init</span>]</span>
+    <span class="attribute">#[<span class="ident">private</span>]</span>
+    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">new</span>() -&gt; <span class="self">Self</span> {
+        <span class="macro">assert!</span>(<span class="op">!</span><span class="ident">env::state_exists</span>(), <span class="string">&quot;Already initialized&quot;</span>);
+        <span class="self">Self</span> {}
     }
 
-    <span class="kw">pub fn </span>withdraw_call(msg: String) {
-        <span class="macro">log!</span>(<span class="string">&quot;prepaid gas: {}&quot;</span>, env::prepaid_gas().<span class="number">0</span>);
-        <span class="macro">log!</span>(<span class="string">&quot;replenisher withdraw call: msg: {}&quot;</span>, msg);
-        <span class="kw">let </span>receiver_id = env::predecessor_account_id();
-        <span class="kw">let </span>amount = U128(NEAR);
-        ft::ext(<span class="string">&quot;wrap.testnet&quot;</span>.parse().unwrap())
-            .with_attached_deposit(<span class="number">1</span>)
-            .with_static_gas(Gas::ONE_TERA * <span class="number">260</span>)
-            .ft_transfer_call(receiver_id, amount, msg);
+    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">withdraw_call</span>(<span class="ident">msg</span>: <span class="ident">String</span>) {
+        <span class="macro">log!</span>(<span class="string">&quot;prepaid gas: {}&quot;</span>, <span class="ident">env::prepaid_gas</span>().<span class="number">0</span>);
+        <span class="macro">log!</span>(<span class="string">&quot;replenisher withdraw call: msg: {}&quot;</span>, <span class="ident">msg</span>);
+        <span class="kw">let</span> <span class="ident">receiver_id</span> <span class="op">=</span> <span class="ident">env::predecessor_account_id</span>();
+        <span class="kw">let</span> <span class="ident">amount</span> <span class="op">=</span> <span class="ident">U128</span>(<span class="ident">NEAR</span>);
+        <span class="ident">ft::ext</span>(<span class="string">&quot;wrap.testnet&quot;</span>.<span class="ident">parse</span>().<span class="ident">unwrap</span>())
+            .<span class="ident">with_attached_deposit</span>(<span class="number">1</span>)
+            .<span class="ident">with_static_gas</span>(<span class="ident">Gas::ONE_TERA</span> <span class="op">*</span> <span class="number">260</span>)
+            .<span class="ident">ft_transfer_call</span>(<span class="ident">receiver_id</span>, <span class="ident">amount</span>, <span class="ident">msg</span>);
     }
 }
 
-<span class="kw">impl </span>Default <span class="kw">for </span>Contract {
-    <span class="kw">fn </span>default() -&gt; <span class="self">Self </span>{
-        <span class="self">Self</span>::new()
+<span class="kw">impl</span> <span class="ident">Default</span> <span class="kw">for</span> <span class="ident">Contract</span> {
+    <span class="kw">fn</span> <span class="ident">default</span>() -&gt; <span class="self">Self</span> {
+        <span class="ident"><span class="self">Self</span>::new</span>()
     }
 }
 </code></pre></div>
-</section></div></main><div id="rustdoc-vars" data-root-path="../../" data-current-crate="vault_test_replenisher" data-themes="ayu,dark,light" data-resource-suffix="" data-rustdoc-version="1.67.0-nightly (77e57db38 2022-10-30)" ></div></body></html>
+</section></div></main><div id="rustdoc-vars" data-root-path="../../" data-current-crate="vault_test_replenisher" data-themes="ayu,dark,light" data-resource-suffix="" data-rustdoc-version="1.64.0 (a55dd71d5 2022-09-19)" ></div></body></html>

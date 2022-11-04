@@ -21,8 +21,8 @@ jobs:
         toolchain: nightly
     - name: Build Docs
       run: |
-        cargo doc --no-deps
         cargo doc --no-deps -p near-sdk
+        cargo doc --no-deps
         echo "<meta http-equiv=\"refresh\" content=\"0; url=vault_test_replenisher\">" > target/doc/index.html
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@v4
